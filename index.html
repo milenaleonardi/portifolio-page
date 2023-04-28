@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portifolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Home | Portifolio</title>
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <nav class="header__menu">
+        <a class="header__menu__link" href="index.html">Home</a>
+        <a class="header__menu__link" href="about.html">Sobre mim</a>
+      </nav>
+    </header>
     <main class="container">
       <section class="container__content">
         <h1 class="container__content__title">
@@ -18,26 +23,44 @@
           >
         </h1>
         <p class="container__content__text">
-          Olá! Sou Milena Leonardi, desenvolvedora Junior de Front-end com o
+          Olá! Sou Milena Leonardi, desenvolvedora iniciante de Front-end com o
           propósito de me especializar em HTML, CSS e Javascript. Realizo
           projetos em desenvolvimento web criando sites a fim de colocar em
           prática boas ideias. Vamos conversar?
         </p>
         <div class="container__links">
+          <h2 class="container__links__subtitle">Acesse minhas redes:</h2>
           <a
-            class="container__links__link"
+            class="container__links__nav"
             href="https://www.instagram.com/milenaleonardi/"
-            >Instagram</a
+          >
+            <img src="./assets/logo_instagram.png" alt="Instagram logo" />
+            Instagram</a
           >
           <a
-            class="container__links__link"
+            class="container__links__nav"
             href="https://github.com/milenaleonardi"
-            >Github</a
+          >
+            <img src="./assets/Logo_Github.png" alt="Github logo" />
+            Github</a
+          >
+          <a
+            class="container__links__nav"
+            href="https://www.linkedin.com/in/milena-leonardi/"
+          >
+            <img src="./assets/Logo_linkedin.png" alt="Linkedin logo" />
+            LinkedIn</a
           >
         </div>
       </section>
-      <img src="Imagem.png" alt="Profile picture" />
+      <img
+        class="container__image"
+        src="./assets/Imagem.png"
+        alt="Imagem portifolio"
+      />
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <p>Desenvolvido por Milena Leonardi.</p>
+    </footer>
   </body>
 </html>

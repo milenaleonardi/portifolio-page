@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap");
+
+/* definindo variáveis globais */
+:root {
+  --pri--color: #000000;
+  --sec--color: #f7f6f2;
+  --ter--color: #8fc1d4;
+  --hover--color: #272727;
+
+  --pri--font: "Krona One", sans-serif;
+  --sec--font: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box; /* impede que elementos saiam do body */
+  /* height: 100vh; viewport height :: porção de área visível */
+  background-color: var(--pri--color);
+  color: var(--sec--color);
+}
+
+.header {
+  padding: 2% 0 0 12%;
+}
+
+.header__menu {
+  display: flex;
+  gap: 80px;
+}
+
+.header__menu__link {
+  font-family: var(--sec--font);
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: var(--ter--color);
+  text-decoration: none;
+}
+
+.titulo-destaque {
+  color: var(--ter--color);
+}
+
+.container {
+  padding: 6% 15%;
+  display: flex; /* todos os itens são dispostos na mesma linha(row) */
+  align-items: center; /* alinhar todos os itens no centro (center) */
+  justify-content: space-between; /* espaçamento entre itens */
+}
+
+.container__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* gap :: tamanho dos espaços entre linhas e colunas*/
+}
+
+.container__content__title {
+  font-size: 2rem; /*converter para rem para obter escalas relativos 1rem = 16px*/
+  font-family: var(--pri--font);
+}
+
+.container__content__text {
+  font-size: 1.25rem;
+  font-family: var(--sec--font);
+}
+
+.container__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* alinhar/centralizar itens verticalmente */
+  gap: 32px;
+}
+
+.container__links__subtitle {
+  font-family: var(--pri--font);
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.container__links__nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  width: 50%;
+  text-align: center;
+  border: 2px solid var(--ter--color);
+  border-radius: 8px;
+  font-size: 1.125rem;
+  font-family: var(--sec--font);
+  font-weight: 600;
+  color: var(--sec--color);
+  padding: 16px 0; /* padding: aumentar espaço entre conteudo e borda*/
+  text-decoration: none;
+}
+
+.container__links__link:hover {
+  background-color: var(--hover--color);
+}
+
+.container__image {
+  width: 50%;
+}
+
+.footer {
+  color: var(--pri--color);
+  background-color: var(--ter--color);
+  padding: 30px;
+  margin: 3% 0 0 0;
+  text-align: center;
+  font-family: var(--sec--font);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
