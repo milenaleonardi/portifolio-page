@@ -47,7 +47,7 @@ body {
 
 .container {
   padding: 6% 15%;
-  gap: 80px;
+  gap: 82px;
   display: flex; /* todos os itens são dispostos na mesma linha(row) */
   align-items: center; /* alinhar todos os itens no centro (center) */
   justify-content: space-between; /* espaçamento entre itens */
@@ -101,7 +101,7 @@ body {
   text-decoration: none;
 }
 
-.container__links__link:hover {
+.container__links__nav:hover {
   background-color: var(--hover--color);
 }
 
@@ -118,4 +118,23 @@ body {
   font-family: var(--sec--font);
   font-size: 1.25rem;
   font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 10%;
+  }
+
+  .header__menu {
+    justify-content: center;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .container__content {
+    width: auto;
+  }
 }
